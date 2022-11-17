@@ -1,0 +1,7 @@
+<h1>Add your new movie below:</h1>
+<%= simple_form_for @list do |f| %>
+  <%= f.input :name, placeholder: "Write the movie name here" %>
+  <%= f.submit "Add", class: "btn btn-primary" %>
+<% end %>
+
+<p class="btn-more-info"><%= link_to "Back to list", lists_path(@list) %></p>
